@@ -86,7 +86,7 @@ body {
         font-weight: 700;
         line-height: 2.4rem;
         color: $color-gray-darkest;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.3rem;
 
         @media screen and (min-width: 870px) {
             font-size: 2rem;
@@ -100,7 +100,7 @@ body {
         margin-bottom: 5rem;
 
         @media screen and (min-width: 870px) {
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
     }
 
@@ -113,7 +113,7 @@ body {
         border-radius: 50%;
         height: 4rem;
         width: 4rem;
-        margin-right: 1.2rem;
+        margin-right: 1.4rem;
     }
 
     &__heading-secondary {
@@ -174,7 +174,7 @@ body {
         @media screen and (min-width: 870px) {
             width: 24.8rem;
             height: 5.5rem;
-            bottom: 36%;
+            bottom: 34%;
             right: -6.8rem;
             border-radius: 10px;
 

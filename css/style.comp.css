@@ -60,7 +60,7 @@ body {
     font-weight: 700;
     line-height: 2.4rem;
     color: #48556a;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.3rem; }
     @media screen and (min-width: 870px) {
       .card__heading-primary {
         font-size: 2rem;
@@ -71,7 +71,7 @@ body {
     margin-bottom: 5rem; }
     @media screen and (min-width: 870px) {
       .card__copy {
-        margin-bottom: 3rem; } }
+        margin-bottom: 2rem; } }
   .card__author {
     display: flex;
     align-items: center; }
@@ -79,7 +79,7 @@ body {
     border-radius: 50%;
     height: 4rem;
     width: 4rem;
-    margin-right: 1.2rem; }
+    margin-right: 1.4rem; }
   .card__heading-secondary {
     font-size: 1.3rem;
     font-weight: 700;
@@ -124,7 +124,7 @@ body {
       .card__share {
         width: 24.8rem;
         height: 5.5rem;
-        bottom: 36%;
+        bottom: 34%;
         right: -6.8rem;
         border-radius: 10px; }
         .card__share::after {
