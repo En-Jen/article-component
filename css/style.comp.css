@@ -29,8 +29,7 @@ body {
   max-width: 500px;
   border-radius: 10px;
   box-shadow: 0 3px 15px rgba(197, 197, 197, 0.349);
-  position: relative;
-  margin-bottom: 3rem; }
+  position: relative; }
   @media screen and (min-width: 870px) {
     .card {
       flex-direction: row;
