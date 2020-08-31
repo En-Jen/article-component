@@ -26,15 +26,16 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  max-width: 680px;
+  max-width: 500px;
   border-radius: 10px;
-  box-shadow: 0 3px 15px rgba(161, 161, 161, 0.349);
+  box-shadow: 0 3px 15px rgba(197, 197, 197, 0.349);
   position: relative;
   margin-bottom: 3rem; }
   @media screen and (min-width: 870px) {
     .card {
       flex-direction: row;
-      max-width: 730px; } }
+      max-width: 730px;
+      max-height: 280px; } }
   .card__img {
     display: block;
     width: 100%;
@@ -144,12 +145,13 @@ body {
   .card__share-text {
     color: #9eafc2;
     text-transform: uppercase;
-    letter-spacing: 5px;
-    margin-bottom: 1.2rem; }
+    letter-spacing: 5px; }
   .card__link {
     width: 2rem;
     height: auto;
     margin-left: 1.5rem;
+    display: flex;
+    align-items: center;
     transition: transform .3s; }
   .card__link:hover {
     transform: scale(1.15); }
