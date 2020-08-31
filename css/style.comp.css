@@ -146,10 +146,13 @@ body {
     text-transform: uppercase;
     letter-spacing: 5px;
     margin-bottom: 1.2rem; }
-  .card__social-icon {
+  .card__link {
     width: 2rem;
     height: auto;
-    margin-left: 1.5rem; }
+    margin-left: 1.5rem;
+    transition: transform .3s; }
+  .card__link:hover {
+    transform: scale(1.15); }
 
 .attribution {
   font-size: 1.1rem;

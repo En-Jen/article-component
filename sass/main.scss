@@ -204,10 +204,15 @@ body {
         margin-bottom: 1.2rem;
     }
 
-    &__social-icon {
+    &__link {
         width: 2rem;
         height: auto;
         margin-left: 1.5rem;
+        transition: transform .3s;
+    }
+
+    &__link:hover {
+        transform: scale(1.15);
     }
 }
 
