@@ -1,4 +1,4 @@
-const shareBtn = document.querySelector('.card__share-icon');
+const shareBtn = document.querySelector('.card__btn');
 const shareActive = document.querySelector('.card__share');
 
 shareBtn.addEventListener('click', () => {
