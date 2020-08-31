@@ -57,7 +57,7 @@ body {
         padding: 3.2rem 4rem 4rem 4rem; } }
   .card__heading-primary {
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 2.4rem;
     color: #48556a;
     margin-bottom: 1.5rem; }
@@ -82,7 +82,7 @@ body {
     margin-right: 1.2rem; }
   .card__heading-secondary {
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 700;
     color: #48556a;
     margin-bottom: .3rem; }
   .card__date {
