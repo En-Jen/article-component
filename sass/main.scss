@@ -11,12 +11,6 @@ $font-family: 'Manrope', sans-serif;
 // FONT SIZE
 $default-font-size: 1.3rem;
 
-// RESPONSIVE BREAKPOINTS
-// $bp-750: 46.875em; // 750px
-// $bp-620: 38.75em; // 620px
-// $bp-480: 30em; // 480px
-// $bp-340: 21.25em; // 340px
-
 
 *,
 *::before,
@@ -32,12 +26,12 @@ html {
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
     font-family: $font-family;
     font-size: $default-font-size;
     font-weight: 500;
     background-color: $color-gray-lightest;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,15 +41,16 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    //justify-content: center;
-    //align-items: center;
     background-color: #fff;
-    height: 51.2rem;
-    width: 32.7rem;
-    border-radius: 9px;
-    overflow: hidden;
+    max-width: 680px;
+    border-radius: 10px;
     box-shadow: 0 3px 15px rgba(161, 161, 161, 0.349);
     position: relative;
+
+    @media screen and (min-width: 870px) {
+        flex-direction: row;
+        max-width: 730px;
+    }
 
     &__img {
         display: block;
@@ -63,11 +58,24 @@ body {
         max-height: 20rem;
         object-fit: cover;
         object-position: 50% 27%;
-        //overflow: hidden;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        @media screen and (min-width: 870px) {
+            max-height: 100%;
+            width: 28.5rem;
+            object-position: left;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 10px;
+        }
     }
 
     &__content {
-        padding: 3.2rem;
+        padding: 3.2rem 3.2rem 1.4rem 3.2rem;
+
+        @media screen and (min-width: 870px) {
+            padding: 3.2rem 4rem 4rem 4rem;
+        }
     }
 
     &__heading-primary {
@@ -76,15 +84,24 @@ body {
         line-height: 2.4rem;
         color: $color-gray-darkest;
         margin-bottom: 1.5rem;
+
+        @media screen and (min-width: 870px) {
+            font-size: 2rem;
+            line-height: 2.8rem;
+        }
     }
 
     &__copy {
         line-height: 2rem;
         color: $color-gray-dark;
-        margin-bottom: 5.5rem;
+        margin-bottom: 5rem;
+
+        @media screen and (min-width: 870px) {
+            margin-bottom: 3rem;
+        }
     }
 
-    &__details {
+    &__author {
         display: flex;
         align-items: center;
     }
@@ -96,7 +113,7 @@ body {
         margin-right: 1.2rem;
     }
 
-    &__name-date {
+    &__info {
 
     }
 
@@ -104,6 +121,7 @@ body {
         font-size: $default-font-size;
         font-weight: 500;
         color: $color-gray-darkest;
+        margin-bottom: .3rem;
     }
 
     &__date {
@@ -118,10 +136,12 @@ body {
         margin-left: auto;
         border: none;
         cursor: pointer;
+        z-index: 10;
+    }
 
-        &--active {
-            background-color: $color-gray-light;
-        }
+    &__btn:hover,
+    &__btn:focus {
+        outline: none;
     }
 
     &__share-icon {
@@ -144,6 +164,29 @@ body {
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.25s ease-out;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        @media screen and (min-width: 870px) {
+            width: 24.8rem;
+            height: 5.5rem;
+            bottom: 36%;
+            right: -6.8rem;
+            border-radius: 10px;
+
+            &::after {
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 12px solid $color-gray-darkest;
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+                position: absolute;
+                bottom: -12px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
 
         &--visible {
             opacity: 1;
@@ -155,16 +198,12 @@ body {
         color: $color-gray-light;
         text-transform: uppercase;
         letter-spacing: 5px;
-        margin-bottom: .5rem;
+        margin-bottom: 1.2rem;
     }
 
     &__social-icon {
         width: 2rem;
         height: auto;
         margin-left: 1.5rem;
-    }
-
-    &__share-icon {
-        margin-left: auto;
     }
 }
