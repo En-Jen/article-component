@@ -28,7 +28,7 @@ body {
   background-color: #fff;
   max-width: 500px;
   border-radius: 10px;
-  box-shadow: 0 3px 15px rgba(185, 185, 185, 0.349);
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
   position: relative; }
   @media screen and (min-width: 870px) {
     .card {
